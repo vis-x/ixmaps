@@ -1,0 +1,46 @@
+{
+	"$schema": "https://gjrichter.github.io/ixmaps/schema/ixmaps/v1.json",
+	"metadata": {
+		"title": "Choropleth Theme",
+		"snippet": "iXmaps sample for a simple chloropleth theme",
+		"description": "",
+		"thumbnail": "",
+		"about": "",
+		"created": "Sat Nov 16 2019 16:03:53 GMT+0100 (Ora standard dell’Europa centrale)"
+	},
+	"map": {
+		"map": "https://s3.eu-central-1.amazonaws.com/maps.ixmaps.com/world_base_ISO/world_ISO3.svgz",
+		"basemap": "CartoDB - Positron",
+		"scaleParam": {
+			"borderScaling": "0.1"
+		},
+		"center": {
+			"lat": "38.95940879245423",
+			"lng": "12.832031250000002"
+		},
+		"zoom": "2"
+	},
+	"themes": [{
+		"layer": "World_countries_shp0",
+		"data": {
+			"name": "population",
+			"url": "https://query.data.world/s/KTpkGt_4PRcePeKDZH1je_9a9mz_Up",
+			"type": "csv"
+		},
+		"field": "2016",
+		"field100": "",
+		"style": {
+			"type": "CHOROPLETHE|LOG",
+			"colorscheme": [
+					"5",
+					"#ffeeee",
+					"#dd0000",
+					"dynamic",
+					"cold"],
+			"lookupfield": "country_code",
+			"lookuptoupper": "true",
+			"titlefield": "country_name",
+			"title": "World population 2016"
+		}
+	}]
+}
