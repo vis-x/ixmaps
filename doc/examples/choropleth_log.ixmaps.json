@@ -14,6 +14,9 @@
 		"scaleParam": {
 			"borderScaling": "0.1"
 		},
+		"options": {
+			"panhidden": "false"
+		},
 		"center": {
 			"lat": "38.95940879245423",
 			"lng": "12.832031250000002"
